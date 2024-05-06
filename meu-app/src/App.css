@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+     
+}
+
+.flex {
+  display: flex;
+}
+
+.logo a img {
+  height: 180px;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+@media (min-width: 943px){
+  
+}
+
+/* HEADER STYLE */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+
+}
+
+header nav ul a:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0px 40px;
+  cursor: pointer;
+}
+
+header nav ul li a.active {
+  color:#ffffff;
+}
+
+
+
+/* MAIN STYLE */
+
+section.initial-text {
+  padding: 40px 15%;
+  display: flex;
+  
+}
+
+section.initial-text {
+  align-items: center;
+  justify-content: center;
+}
+
+section div.txt-top-site h1 {
+  font-size: 40px;
+  gap: 90px;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+}
+
+
+section.initial-text img {
+  height: 300px;
+  border-radius: 30px;
+  border: 5px solid #2196F3;
+}
+
+section h1 span {
+  color: #2196F3;
+  font-size: 80px;
+}
+
+section div.txt-top-site p {
+  padding-right: 30px;
+}
+
+/* FOOTER STYLE */
+
+footer {
+  text-align: center;
+  background-color: #2196F3;
+  margin-top: 250px;    
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media screen and (max-width: 1024px){
+  
+  .logo a img {
+      height: 100px;
+  }
+ body main section div.txt-top-site h1 {
+  font-size: 25px;
+ } 
+}
+
+@media screen and (max-width: 890px){
+
+  body header nav ul li{
+     padding: 0px 20px;
+  }
+  body main section div.flex {
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+}
+
+@media screen and (max-width: 675px){
+  body header div.interface{
+      display: flex;
+      flex-direction: column;
+      padding: 40px 8%;
+  }
+  body header nav ul li{
+      padding: 0px 7px;
+   }
+   body header div.logo img {
+      height: 130px;
+   }
+   body main section div.txt-top-site h1{
+      font-size: 22px;
+   }
+}
+
+
+  @media screen and (max-width: 456px){
+      
+      body main section div.txt-top-site h1{
+          font-size: 19px;
+      }
+  }
+
+  @media screen and (max-width: 410px){
+      body header div.interface{
+          padding: 40px 4%
+      }
+      body main section div.txt-top-site h1{
+          font-size: 17px;
+      }
+  }
+
+
+  @media screen and (max-width: 374px){
+     
+      body header div.interface{
+          padding: 40px 0%
+      }
+
+      body header nav ul li{
+          padding: 0px 4px;
+       
+      }
+  
+  }
